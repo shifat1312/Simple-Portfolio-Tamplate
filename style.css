@@ -1,0 +1,462 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.header-container{
+    text-align: center;
+    display: flex;
+    margin-top: 10px;
+}
+.header-menu{
+    width: 90%;
+    margin-top: 5px;
+    font-weight: bold;
+    text-shadow: 0.2px 0.2px gray;
+    color: rgb(53, 49, 49);
+}
+.home{
+    margin-left: 350px;
+}
+.header-container a{
+    text-decoration: none;
+    margin-right: 2rem;
+    font-size: 20px;
+    color: #1D2004;
+}
+.header-container a:hover{
+    color: #21A0D4;
+}
+
+.contact-button{
+    width: 20%;
+    margin-right: 5%;
+}
+.contact-me{
+    height: 40px;
+    padding: 2px;
+    width: 150px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #4444F2;
+    color: white;
+    border: none;
+    border-radius: 20px;
+}
+.contact-me:hover{
+    background-color: #2A2ABE;
+}
+.introduction-body{
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    margin: 50px auto;
+    border-radius: 10px;
+}
+.left-side-div{
+    width: 40%;
+    padding: 15px;
+    margin-top: 20px;
+    margin-left: 250px;
+    animation-name: anim-left;
+    animation-duration: 3s;
+    position: relative;
+    /* color: whitesmoke; */
+}
+@keyframes anim-left {
+    0%{
+        top: 0px;
+        right: 100px;
+    }
+    100%{
+        top: 0px;
+        right: 0px;
+    }
+}
+.btn{
+    margin-top: 20px;
+    height: 40px;
+    padding: 2px;
+    width: 150px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #4444F2;
+    color: white;
+    border: none;
+    border-radius: 20px;
+}
+.btn:hover{
+    background-color: #2A2ABE;
+}
+.hi-there{
+    font-weight: bold;
+    text-shadow: 1px 1px;
+}
+.my-name{
+    color: #ff2d2d;
+    font-weight: bold;
+    text-shadow: 1px 1px;
+}
+.about-me-des{
+    margin-top: 20px;
+    line-height: 1.8rem;
+    font-weight: lighter;
+}
+
+/* Intro Right Side Div */
+.right-side-div{
+    margin-right: 15%;
+    margin-top: 20px;
+    position: relative;
+    animation-name: anim-right;
+    animation-duration: 3s;
+}
+@keyframes anim-right {
+    0%{
+        top: 0px;
+        left: 100px;
+    }
+    100%{
+        top: 0px;
+        left: 0px;
+    }
+}
+.about-me-images{
+    position: relative;
+    z-index: 0;
+}
+.my-image{
+    position: absolute;
+    top: -70;
+    left: 30;
+}
+.myimage{
+    width: 500px;
+    height: 530px;
+    position: relative;
+}
+
+/* Services */
+.service-section{
+    width: 95%;
+    padding: 10px;
+    margin: 0px auto;
+    border-radius: 10px;
+}
+.service-title{
+    font-size: 35px;
+    text-align: center;
+    font-weight: bold;  
+}
+.service-option{
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+}
+.so{
+    width: 200px;
+    height: 250px;
+    border-radius: 5px;
+    background-color: #FCFCFC;
+    margin-top: 20px;
+    box-shadow: 2px 2px 2px 2px gray;
+}
+.so:hover{
+    transform: scale(1.1, 1.1);
+    background-color: #4444F2;
+    color: white;
+}
+.so img,h3{
+    margin-top: auto;
+}
+.so i{
+    font-size: 50px;
+    margin-left: 35%;
+    margin-top: 50px;
+}
+.sert{
+    text-align: center;
+    margin-top: 20px;
+}
+.ui-ux-design{
+    top: 66.5;
+    animation-name: anim-service-option-left-1;
+}
+.html-css{
+    top: 66.5;
+    animation-name: anim-service-option-center;
+}
+.java-script{
+    top: 66.5;
+    animation-name: anim-service-option-right-1;
+}
+.react{
+    top: 66.5;
+    animation-name: anim-service-option-left-2;
+}
+.mongodb{
+    top: 66.5;
+    animation-name: anim-service-option-right-2;
+}
+.sob{
+    text-align: center;
+    height: 40px;
+    padding: 2px;
+    width: 150px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: white;
+    box-shadow: 10px;
+    color: #4444F2;
+    border: none;
+    border-radius: 20px;
+    margin: 15px 25px;
+}
+.sob:hover{
+    cursor: pointer;
+    background-color: #2A2ABE;
+    color: whitesmoke;
+}
+.project-section{
+    display: flex;
+    margin-top: 65px;
+    height: 550px;
+}
+.left-proj-section{
+    width: 40%;
+    height: 300px;
+}
+.project-section div{
+    margin: 0 auto;
+}
+.proj-title{
+    font-size: 50px;
+    font-weight: bold;
+    text-shadow: 1px 1px;
+    position: relative;
+    top: 150;
+    left: 180;
+    animation-name: anim-proj-title;
+    animation-duration: 2s;
+}
+.proj-title span{
+    color: #ff2d2d;
+}
+@keyframes anim-proj-title {
+    0%{
+        top: 150;
+        left: 100;
+    }
+    100%{
+        top: 150;
+        left: 180;
+    }
+}
+.have{
+    position: relative;
+    top: 180;
+    left: -10;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+    box-shadow: 1px 1px 1px 1px #ff2d2d;
+    animation-name: anim-proj-have;
+    animation-duration: 2s;
+}
+@keyframes anim-proj-have {
+    0%{
+        top: 180;
+        left: -60;
+    }
+    100%{
+        top: 180;
+        left: -10;
+    }
+}
+.have > div{
+    text-align: center;
+}
+.proj-design{
+    display: flex;
+    justify-content: space-evenly;
+}
+.right-proj-section{
+    width: 40%;
+    margin-right: 50px;
+}
+.right-proj-section > img{
+    height: 750px;
+    width: 700px;
+    position: relative;
+    top: -100;
+    right: 50;
+    animation-name: anim-proj-right;
+    animation-duration: 2s;
+}
+@keyframes anim-proj-right {
+    0%{
+        top: -100px;
+        right: 5px;
+    }
+    100%{
+        top: -100px;
+        right: 50px;
+    }
+}
+.client-review-section{
+    margin-top: 65px;
+}
+.client-review-title{
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    text-shadow: 1px 1px;
+    color: rgb(86, 48, 23);
+}
+.reviews{
+    height: 250px;
+    width: 40%;
+    background-color: whitesmoke;
+    margin: 30px auto;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.review-image{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+.client-name{
+    margin-top: 10px;
+}
+.client-review-des{
+    font-size: 13px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: justify;
+    line-height: 1.2rem;
+}
+.client-class{
+    width: 90%;
+    margin: 0 auto  ;
+    display: flex;
+    flex-wrap: wrap;
+}
+.get-in-touch-section{
+    height: 450px;
+    margin-top: 65px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 2px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.gt{
+    width: 50%;
+    height: 300px;
+    margin: auto auto;
+    border-radius: 10px;
+    padding: 10px; 
+}
+.get-in-touch-title{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    text-shadow: 1px 1px;
+}
+.get-in-touch-form{
+    margin-top: 10px;
+    margin-left: 25%;
+}
+.nm{
+    width: 180px;
+    height: 25px;
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid gray;
+}
+.cs{
+    width: 180px;
+    height: 25px;
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid gray;
+}
+.ms{
+    width: 364px;
+    height: 180px;
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid gray;
+    margin-top: 5px;
+}
+.desi-touch{
+    color: #ff2d2d;
+}
+.right-footer{
+    margin-top: 65px;
+    margin-right: 300px;
+}
+.left-footer{
+    width: 30%;
+    margin-left: 300px;
+}
+.project-with-me{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 25px;
+}
+.project-with-me-desi{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 1.5rem;
+    text-align: justify;
+}
+.btn-submit{
+    background-color: #4444F2;
+    margin-top: 5px;
+    color: white;
+    border: none;
+    height: 30px;
+    width: 60px;
+    font-size: 14px;
+    border-radius: 5px;
+    padding: 5px;
+    font-weight: bold;
+}
+.btn-submit:hover{
+    background-color: #2A2ABE;
+}
+.footer-section{
+    background-color: #150442;
+    color: white;
+    padding: 10px;
+    margin-top: 65px
+}
+.fo{
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.fo-social{
+    display: inline;
+}
+.li{
+    color: white;
+    margin-right: 10px;
+}
+.li i{
+    font-size: 30px;
+}
+.li i:hover{
+    transform: scale(1.2,1.2);
+}
